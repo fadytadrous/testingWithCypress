@@ -7,6 +7,7 @@ const items = [
       details: `Your tests will exist in a describe block. This block takes two arguments. The first is a description of what you are testing. 
       The second is a callback function for your actually tests within that block`,
       id: '1',
+      dataTest: 'describeBlock'
     },
     {
         summary: 'Fundamental 2) It blocks',
@@ -16,6 +17,7 @@ const items = [
         The first argument is the title of an individual test, 
         and the second argument is a callback function containing your test code`,
         id: '2',
+        dataTest: 'itBlock'
       },
     {
         summary: 'Fundamental 3) Commands & interacting with elements',
@@ -26,6 +28,7 @@ const items = [
         NOTE: You must have your dev server running for Cypress to work.
         NOTE: Cypress has an async nature *docs`,
         id: '3',
+        dataTest: 'commandBlock'
       },
       {
         summary: 'Fundamental 4) Getting elements',
@@ -33,6 +36,7 @@ const items = [
         sort of assertion. For example, my h1 element contains certain text. You can get elements
         in Cypress by using the get function, and pass in a CSS query selector`,
         id: '4',
+        dataTest: 'elements'
       },
       {
         summary: 'Fundamental 5) Command chaining & assertions',
@@ -41,17 +45,20 @@ const items = [
         getting an element. For example, get(h1).contains('text'). Cypress has various ways 
         of making an assertion *docs`,
         id: '5',
+        dataTest: 'chaining'
       },
       {
         summary: 'Fundamental 6) Focussing on a single test',
         details: `You can use it.only() to run a single test`,
         id: '6',
+        dataTest: 'focus'
       },
       {
         summary: 'Fundamental 7) beforeEach',
         details: `You can use a beforeEach function to perform certain actions 
         prior to every test`,
         id: '7',
+        dataTest: 'beforeEach'
       },
       {
         summary: 'Fundamental 8) Custom commands',
@@ -59,6 +66,7 @@ const items = [
         your own custom commands. You add your custom commands to cypress/support/commands.ts
         For example, you might add a custom command getData that gets an element by data-test`,
         id: '8',
+        dataTest: 'customCommand'
       },
     
   ]
